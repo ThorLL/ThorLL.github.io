@@ -380,7 +380,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .barWrapper {
     font-weight: 400;
     font-size: 16px;
-    text-transform: uppercase;
+    text-align: center;
 }
 .progress {
     border-radius:3px;
@@ -468,7 +468,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color: #EAB464;
     position: absolute;
     font-size: 10px;
-    left: -14.5%;
+    left: -15%;
+    top: 5%;
     z-index: 1;
 }
 .timeline-content h4.title {
