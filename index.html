@@ -30,7 +30,7 @@
 </div> <!--navbar-->
 <section class="hero-section">
     <video autoplay loop muted playsinline>
-        <source src="assets/images/video.mp4" type="video/mp4">
+        <source src="assets/images/hero.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 </section> <!--Gameplay video-->
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6" style="padding-left: 60px">
-                    <img alt="About Me Image" class="img-responsive" src="assets/images/BF3I6260.jpg"
+                    <img alt="About Me Image" class="img-responsive" src="assets/images/me.jpg"
                          style="max-width:100%;height:auto;"/>
                     <br>
                     <div class="hm-foot-icon text-center">
@@ -177,6 +177,11 @@
                                     <ul>
                                         <li> • Foundations of Game AI</li>
                                         <li> • Game World Design</li>
+                                    </ul>
+                                    <h4>Research </h4>
+                                    <br>
+                                    <ul>
+                                        <li> 1 Ongoing research project </li>
                                     </ul>
                                 </div>
                             </div>
@@ -350,38 +355,38 @@
 <section class="portfolio" id="portfolio">
     <div class="portfolio-details">
         <div class="section-heading text-center">
-            <h2>My Games</h2>
-            <p>A snippet of the games I have worked on/ developed</p>
+            <h2>My Games and game projects</h2>
+            <p>A snippet of the games and projects I've developed or co-developed</p>
         </div>
         <div class="img-container">
             <div class="image-container" data-text="1" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/portfolio/p1.png"/>
+                <img alt="portfolio image" src="assets/images/games/raytracer.png"/>
                 <div class="overlay">
-                    <div class="text">Trippin with Grandma</div>
+                    <div class="text">GLSL ray tracer</div>
                 </div>
             </div>
             <div class="image-container" data-text="2" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/portfolio/p2.png"/>
+                <img alt="portfolio image" src="assets/images/games/beerder.jpeg"/>
                 <div class="overlay">
-                    <div class="text">Bombkart</div>
+                    <div class="text">Open-GL shadering library</div>
                 </div>
             </div>
             <div class="image-container" data-text="3" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/portfolio/p3.png"/>
+                <img alt="portfolio image" src="assets/images/games/oceanOutcasts.png"/>
                 <div class="overlay">
                     <div class="text">Ocean Outcasts</div>
                 </div>
             </div>
             <div class="image-container" data-text="4" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/portfolio/p4.jpg"/>
+                <img alt="portfolio image" src="assets/images/games/TLR.jpeg"/>
                 <div class="overlay">
                     <div class="text">The Last Reservoir</div>
                 </div>
             </div>
             <div class="image-container" data-text="5" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/portfolio/p5.png"/>
+                <img alt="portfolio image" src="assets/images/games/frog.png"/>
                 <div class="overlay">
-                    <div class="text">Home-made C++ engine</div>
+                    <div class="text">Ongoing research project into AI in turn-based strategy games</div>
                 </div>
             </div>
         </div>
@@ -404,14 +409,14 @@
                     </p>
                 </div>
                 <div class="col-sm-6" style="padding-top: 60px;">
-                    <img alt="AI classifiers image" class="img-responsive" src="assets/images/classifiers.png"
+                    <img alt="AI classifiers image" class="img-responsive" src="assets/images/software/classifiers.png"
                          style="max-width:100%;height:auto;"/>
                     <br>
                 </div>
             </div>
             <div class="row" style="padding-top: 100px;">
             <div class="col-sm-4">
-                    <img alt="Othello board image" class="img-responsive" src="assets/images/othello.png"
+                    <img alt="Othello board image" class="img-responsive" src="assets/images/software/othello.png"
                          style="max-width:100%;height:auto;"/>
                     <br>
                 </div>
@@ -460,11 +465,11 @@
 
 <script>
     const gameText = {
-        "1": "Trippin' with Grandma is a fun little two player exploration game where one player control the in-game character situated in a forest filled with mushrooms, some beneficial, some neutral, others psychedelic or deadly. Meanwhile your friend, placed away from the computer, will knows which mushrooms are best left alone assisted by their trusty mushrooms picker's guild. Together pick the right mushrooms by precisely communicating the visuals to your mushroom know-it-all friend and make to know where a cure might be should a bad mushroom be needed",
-        "2": "Bombkart the (prototype) game is a quick and simple speed-running game where players as to masterfully navigate racetracks while carrying around a bomb, colliding with anything leads to an explosive demise, but should the player go too slow it too will set off the bomb.",
-        "3": "Ocean Outcasts is the most extensive game I've worked on to date. The survival-, rouge-like-, management game was developed following my studies in the Making Games course in a team of a product manager, 2 designers and 3 programmers. The game plays out with first selecting one's crew for which to descend into the deep ocean, in an attempt to reach an unknown goal. Along the way the player must manage their crew members as well as the submarine's oxygen levels, navigation, hull strength and weapons' production, while fighting of increasingly dreadful deep sea monsters.<br> Available at <a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://thorllind.itch.io/ocean-outcasts\">thorllind.itch.io/ocean-outcasts</a>",
-        "4": "Project: The Last Reservoir (development in progress), is an environmentally story driven adventure game. Work with the resistance group to take down the elitist nobility exploiting the starving and suffocating populaces. Your job is to infiltrate, investigate and expose the truths about the missing people and constant stream of job applications for test subjects.",
-        "5": "My exams-project for Game programming, a quick and simple platformer built within a home-made C++ engine. The project it-self focused on exploring and showcasing understanding of collisions, physics, game loop, low level memory management and drawing/rendering performance.",
+        "1": "A simple ray tracer build from the ground up in C++ and GLSL, soon to be based on the Beerder shadering library<br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/ray-tracer\">github.com</a>",
+        "2": "(Very early stages) Ongoing Open-GL shadering library project with my co-student and friend Thomas. Built in C++ to speed up grapgics programming projects <br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/beerder\">github.com</a><br><i>AI generated image (I am not an artist)</i>",
+        "3": "Ocean Outcasts is the most extensive game I've worked on to date. The survival-, rouge-like-, management game was developed following my studies in the Making Games course in a team of a product manager, 2 designers and 3 programmers. The game plays out with first selecting one's crew for which to descend into the deep ocean, in an attempt to reach an unknown goal. Along the way the player must manage their crew members as well as the submarine's oxygen levels, navigation, hull strength and weapons' production, while fighting of increasingly dreadful deep sea monsters.<br>Available at:<br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://thorllind.itch.io/ocean-outcasts\">itch.io</a><br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/ocean-outcasts\">github.com</a>",
+        "4": "<b>Hero-Section video</b><br>The Last Reservoir is an environmentally story driven adventure game. Work with the resistance group to take down the elitist nobility exploiting the starving and suffocating populaces. Your job is to infiltrate, investigate and expose the truths about the missing people and constant stream of job applications for test subjects.<br>Available at:<br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://thorllind.itch.io/the-last-reservoir\">itch.io</a><br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/the-last-reservoir\">github.com</a><br><i>AI generated image (The game doesn't have a splash art and none of us are artists)</i>",
+        "5": "Ongoing research project into AI in turn-based strategy games at ITU<br>Art created by one of research team's designers <a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://www.lauradecarli.com\">Laura DeCarli</a>",
     };
 
     function openModal(element) {
