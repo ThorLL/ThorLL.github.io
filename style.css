@@ -172,3 +172,20 @@ html {
     cursor: pointer;
     opacity: 1;
 }
+
+.icon-item {
+    text-align: center;
+    font-size: 14px;
+    height: 120px;
+}
+.icon-detail {
+    margin: 0 auto;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px #0003;
+    transition: .4s;
+}
