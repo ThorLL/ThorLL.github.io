@@ -1,0 +1,136 @@
+﻿@import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+@font-face {
+    font-family: 'Decovar Draw';
+    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/DecovarDRAW-VF.ttf');
+}
+
+@theme {
+    --color-primary: oklch(20.5% 0 0);
+    --color-accent: rgb(255, 255, 255, 0.1);
+    --color-itch: rgb(238, 95, 93);
+    --color-github: rgb(127, 88, 200);
+    --color-linkedin: rgb(10, 102, 194);
+
+    --animate-draw: draw 4s infinite;
+
+    @keyframes draw {
+        0% {font-variation-settings: 'DRAW' 1000;}
+        50% {font-variation-settings: 'DRAW' 0;}
+        100% {font-variation-settings: 'DRAW' 1000;}
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+svg {
+    @apply transition-colors;
+}
+
+.round-button {
+    @apply my-4 justify-center items-center pl-5 pr-6 py-3 bg-white/10 hover:bg-white/20 rounded-full text-sm font-medium transition-all duration-300 hover:tracking-wider flex gap-2;
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+.scroll-dot {
+    @apply justify-center items-center w-3 h-3 rounded-full bg-white/20 hover:bg-white transition-colors hover:scale-150
+}
+
+.scroll-dot[data-toggled="true"] {
+    @apply bg-white scale-150
+}
+
+section {
+    @apply snap-start snap-always h-full flex flex-col md:flex-row;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll-bar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+section > * {
+    @apply w-full md:w-1/2 h-1/2 md:h-full;
+}
+
+section > .graphic {
+    @apply relative overflow-hidden;
+}
+
+section > .graphic > img, video{
+    @apply absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:rotate-1;
+}
+
+section > .content {
+    @apply md:items-center justify-center p-8 bg-primary overflow-auto flex relative;
+}
+
+section > .content span {
+    @apply text-neutral-400 tracking-wider text-sm font-mono;
+}
+
+section > .content h2 {
+    @apply mt-4 text-5xl md:text-7xl font-bold leading-none bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent;
+}
+
+section > .content p {
+    @apply my-6 text-neutral-400 text-lg leading-relaxed;
+}
+
+.content::-webkit-scrollbar {
+    @apply size-1;
+}
+
+.content::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    @apply bg-white/25 rounded-xl;
+}
+
+.content::-webkit-scrollbar-corner {
+    @apply bg-transparent;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field label {
+    @apply absolute text-accent pointer-events-none left-4 translate-y-0.5 transition-transform duration-300;
+}
+.input-field textarea:focus ~ label,
+.input-field textarea:valid ~ label,
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+    @apply bg-primary text-inherit rounded-full px-2 font-medium text-lg scale-75 translate-x-0.5 -translate-y-3.5;
+}
+
+#contact-form[data-toggled="true"] {
+    @apply md:shadow-lg shadow-accent translate-y-0;
+}
+
+#contact-form {
+    @apply bg-primary duration-500 z-3 px-8 py-6 text-base flex flex-col gap-5 rounded-b-2xl
+    left-0 transition-all min-w-full
+    absolute;
+}

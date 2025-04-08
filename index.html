@@ -1,535 +1,308 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+﻿<!DOCTYPE html>
+<html lang="en" class="dark antialiased scroll-smooth" style="color-scheme: dark;" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Game Developer Portfolio</title>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta charset="UTF-8">
+  <title>THOR LIND</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
-          rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/flaticon.css" rel="stylesheet">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootsnav.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+  <meta name="description" content="Software and Game Developer in Copenhagen, Denmark">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="next-size-adjust" content="">
+  <link href="style.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body>
-<div class="navbar" style="border-radius: 0; margin-bottom: 0">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#portfolio">Game Projects</a>
-    <a href="#software">Software Projects</a>
-</div> <!--navbar-->
-<section class="hero-section">
-    <video autoplay loop muted playsinline>
-        <source src="assets/images/hero.mp4" type="video/mp4">
+<body class="bg-primary flex flex-col h-screen m-0">
+<nav class="flex w-full relative
+  md:divide-x-1 divide-accent
+  items-center
+  justify-between
+  data-[toggled=true]:[&>#nav-mobile-section]:max-md:translate-y-0" data-toggled="false">
+  <div class="flex border-accent border-b-1 lg:basis-1/2 basis-1/4 h-full z-5 items-center px-4 py-10 gap-6">
+    <div class="size-16 rounded-full bg-[url(../Resources/me.jpg)] bg-center bg-cover"></div>
+    <p class="!font-[Decovar_Draw] animate-draw lg:text-2xl tracking-[0.75rem]">THOR LIND</p>
+  </div>
+  <div id="nav-mobile-section" class="divide-accent divide-x-1
+      place-content-evenly
+      max-md:fixed
+      flex flex-col md:flex-row lg:basis-1/2 basis-3/4
+      md:*:basis-1/3
+      h-full
+      max-md:w-screen
+      max-md:-translate-y-full
+      bg-primary
+      *:px-4
+      *:py-10
+      transition-transform
+      duration-600
+      ease-in-out
+      z-4
+      bottom-0
+  ">
+    <div class="flex flex-col items-center max-md:gap-7 justify-center md:flex-row text-5xl md:text-base border-accent md:border-b-1">
+      <a class="hover:[&_button]:[&_svg]:text-green-400 hover:underline" href="Resources/Public%20CV%2004.pdf" download>
+        <button class="round-button !m-0">
+          <svg class="size-4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+          RESUME
+        </button>
+      </a>
+    </div>
+    <div class="flex items-center max-md:gap-7 justify-center md:place-content-evenly md:flex-row text-5xl md:text-base border-accent md:border-b-1">
+      <a class="hover:text-github" href="https://github.com/ThorLL">
+        <svg class="size-6 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+        </svg>
+      </a>
+      <a class="hover:text-linkedin" href="https://www.linkedin.com/in/thor-lind/" target="_blank">
+        <svg class="size-6 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+        </svg>
+      </a>
+    </div>
+    <div class="md:relative items-center flex justify-center">
+      <div class="z-4 absolute size-full bg-primary top-0 left-0 border-accent md:border-b-1 max-md:hidden"></div>
+      <div class="*:z-5 justify-center flex gap-2 items-center">
+        <div class="size-2 rounded-full bg-green-400 "></div>
+        <button class="cursor-pointer" type="button" onclick="document.getElementById('contact-form').dataset.toggled = document.getElementById('contact-form').dataset.toggled === 'true' ? 'false' : 'true'">Available for work</button>
+      </div>
+      <div id="contact-form" class="top-32 md:top-full max-md:h-3/4 -translate-y-full">
+          <form action="https://formsubmit.co/thorlind030601@gmail.com" method="POST" class="flex flex-col gap-5">
+            <div class="input-field">
+              <input class="w-full px-3 py-4 rounded-lg border-1 border-accent" type="text" id="email" name="email" required="">
+              <label for="email">Company Email</label>
+            </div>
+            <div class="input-field">
+              <textarea class="apply w-full px-3 py-4 rounded-lg border-1 border-accent resize-none" name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+              <label for="textarea">Write a message</label>
+            </div>
+            <div class="flex items-center justify-between">
+              <button class="round-button" type="submit">Send</button>
+              <button class="cursor-pointer" type="button" onclick="document.getElementById('contact-form').dataset.toggled = 'false'">
+                <svg class="size-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+    </div>
+
+  </div>
+  <button class="items-center cursor-pointer gap-3 h-full relative z-4 flex text-sm md:hidden px-4" type="button" onclick="handleNavToggle()">
+    <span class="inline-block leading-4">Menu</span>
+    <svg class="inline-block h-4 leading-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+      <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+    </svg>
+  </button>
+</nav>
+
+<main class="snap-y snap-mandatory h-dvh overflow-y-auto overflow-x-hidden no-scroll-bar">
+  <section>
+    <div class="graphic">
+      <video autoplay loop muted playsinline>
+        <source src="Resources/Tornado.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
-    </video>
-</section> <!--Gameplay video-->
-<section class="about" id="about">
-    <div class="section-heading text-center">
-        <h2>about me</h2>
+      </video>
     </div>
-    <div class="container">
-        <div class="about-content">
-            <div class="row">
-                <div class="col-sm-6 single-about-txt">
-                    <h3>
-                        Student game developer with a background in software development, low level programming, simulations and artificial intelligence
-                    </h3>
-                    <p>
-                        I have solid experiences in various programming languages. My proficiency primarily lies in C#, Kotlin, Java, Python, and C++, acquired through game development, artificial intelligence development, and software engineering projects.
-                        <br>
-                        Working with both Unity, Unreal Engine and Open Gl, I've utilised C# and C++, to craft engaging and immersive gaming experiences.
-                    </p>
-                    <div class="row" style="padding-top: 5px">
-                        <div class="col-sm-6"><p style="border-bottom: 0; padding: 10px 0 0"><i class="fa fa-phone"></i>
-                            +45 53687435</p></div>
-                        <div class="col-sm-6"><p style="border-bottom: 0; padding: 10px 0 0"><i
-                                class="fa fa-envelope"></i> thorlind030601@gmail.com</p></div>
-                    </div>
-                </div>
-                <div class="col-sm-6" style="padding-left: 60px">
-                    <img alt="About Me Image" class="img-responsive" src="assets/images/me.jpg"
-                         style="max-width:100%;height:auto;"/>
-                    <br>
-                    <div class="hm-foot-icon text-center">
-                        <ul style="display: inline-block; padding-left: 0;">
-                            <li style="display: inline; margin-right: 10px;"><a href="https://github.com/ThorLL/"><i
-                                    class="flaticon-github-logo"></i></a></li>
-                            <li style="display: inline; margin-right: 10px;"><a
-                                    href="https://thorllind.itch.io">
-                                <svg class="icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z"/>
-                                </svg>
-                            </a></li>
-                            <li style="display: inline; margin-right: 10px;"><a
-                                    href="https://www.linkedin.com/in/thor-lind/"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section><!--about me-->
-<section class="education" id="education">
-    <div class="section-heading text-center">
-        <h2>education</h2>
-    </div>
-    <div class="container">
-        <div class="education-horizontal-timeline">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2017 - 2020</h2>
-                            <h3>Higher Technical Examination Program (HTX)</h3>
-                        </div>
-                        <div class="timeline-horizontal-border">
-                            <i aria-hidden="true" class="fa fa-circle"></i>
-                            <span class="single-timeline-horizontal"></span>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <h4 class="title">
-                                    Campus Bornholm
-                                </h4>
-                                <h5>Rønne, Bornholm, Denmark</h5>
-                                <p class="description">
-                                    Main topics: Danish A, English A, Mathematics A, technology (development and
-                                    production) A and information technology B.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2020 - 2023</h2>
-                            <h3>bachelor <span>of </span> software development</h3>
-                        </div>
-                        <div class="timeline-horizontal-border">
-                            <i aria-hidden="true" class="fa fa-circle"></i>
-                            <span class="single-timeline-horizontal"></span>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <h4 class="title">
-                                    it-university of copenhagen
-                                </h4>
-                                <h5>Copenhagen, Denmark</h5>
-                                <div>
-                                    <p class="description">
-                                        Academic focus: Practical and theoretical skills for development of software
-                                    </p>
-                                    <br>
-                                    <h4>Electives </h4>
-                                    <br>
-                                    <ul>
-                                        <li> • Introduction to Artificially Intelligence, B.Sc. + M.Sc.
-                                        </li>
-                                        <li> • Large Scale Data Analysis by Machine Learning</li>
-                                    </ul>
-                                    <br>
-                                    <p><strong>Bachelor thesis:</strong> Automated Annotations of Badminton Batch -
-                                        by tracking players’ and shuttlecock’s position using in-house trained
-                                        machine learning models</p>
-                                </div>
+    
+    <div class="content">
+      <div class="max-w-lg md:float-animation">
+        <span>01 / Simulation</span>
+        <h2>Tornado Vortex Simulation</h2>
+        <p>
+          Developed in Unity using the new ECS (Entity Component System) architecture, the simulation renders hundreds of thousands of fully particles in real-time.<br>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-horizontal-timeline">
-                        <div class="experience-time">
-                            <h2>2023 - 2025</h2>
-                            <h3>Master <span>of </span> Games (Technology)</h3>
-                        </div>
-                        <div class="timeline-horizontal-border">
-                            <i aria-hidden="true" class="fa fa-circle"></i>
-                            <span class="single-timeline-horizontal"></span>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-content">
-                                <h4 class="title">
-                                    it-university of copenhagen
-                                </h4>
-                                <h5>Copenhagen, Denmark</h5>
-                                <div>
-                                    <p>
-                                        Academic focus: Practical and theoretical skills for development of games
-                                    </p>
-                                    <br>
-                                    <h4>Electives </h4>
-                                    <br>
-                                    <ul>
-                                        <li> • Foundations of Game AI</li>
-                                        <li> • Game World Design</li>
-                                    </ul>
-                                    <h4>Research </h4>
-                                    <br>
-                                    <ul>
-                                        <li> 1 Ongoing research project </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          The tornado physics are grounded in real-world equations and atmospheric modeling, with customizable parameters for altitude-based wind speed, drag, pressure systems, and more. To maintain performance at scale, heavy calculations are precomputed and cached depending on each particle's position relative to the vortex.<br>
+        </p>
+        <a class="hover:[&_button]:[&_svg]:text-github" href="https://github.com/ThorLL/tornado">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>
+            Source
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
 
-            </div>
-        </div>
+  <section>
+    <div class="content">
+      <div class="max-w-lg md:float-animation">
+        <span>02 / Game</span>
+        <h2>The Last Reservoir</h2>
+        <p>
+          The Last Reservoir is an environmentally story driven adventure game. Work with the resistance group to take down the elitist nobility exploiting the starving and suffocating populaces.<br>
+          Your job is to infiltrate, investigate and expose the truths about the missing people and constant stream of job applications for test subjects.<br>
+        </p>
+        <a class="hover:[&_button]:[&_svg]:text-itch" href="https://thorllind.itch.io/the-last-reservoir">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z"/>
+            </svg>
+            Play It
+          </button>
+        </a>
+        <a class="hover:[&_button]:[&_svg]:text-github" href="https://github.com/ThorLL/the-last-reservoir">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>
+            Source
+          </button>
+        </a>
+      </div>
     </div>
 
-</section><!--education-->
-<section class="experience" id="experience">
-    <div class="section-heading text-center">
-        <h2>experience</h2>
+    <div class="graphic">
+      <video autoplay loop muted playsinline>
+        <source src="Resources/hero.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     </div>
-    <div class="container">
-        <div class="experience-content">
-            <div class="main-timeline" style="margin-left: 80px;">
-                <ul>
-                    <li>
-                        <div class="single-timeline-box fix">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="experience-time text-right">
-                                        <h2>2023 - Present</h2>
-                                        <h3>Software developer</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-offset-1 col-md-5">
-                                    <div class="timeline">
-                                        <div class="timeline-content">
-                                            <h4 class="title">
-                                                <span><i aria-hidden="true" class="fa fa-circle"></i></span>
-                                                Shape Games
-                                            </h4>
-                                            <h5>Copenhagen, Denmark</h5>
-                                            <p class="description">
-                                                Backend software developer on the Control Panel Content Management
-                                                System (CMS)
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+  </section>
 
-                    <li>
-                        <div class="single-timeline-box fix">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="experience-time text-right">
-                                        <h2>
-                                            2022 - 2022
-                                        </h2>
-                                        <h3>Software developer</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-offset-1 col-md-5">
-                                    <div class="timeline">
-                                        <div class="timeline-content">
-                                            <h4 class="title">
-                                                <span><i aria-hidden="true" class="fa fa-circle"></i></span>
-                                                eCERTO
-                                            </h4>
-                                            <h5>Aberdeen, Scotland</h5>
-                                            <p class="description">
-                                                Development of distributed ecommerce software with focus on transferring
-                                                of sensitive data
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="single-timeline-box fix">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="experience-time text-right">
-                                        <h2>2019 - 2020</h2>
-                                        <h3>Kitchen assistant</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-offset-1 col-md-5">
-                                    <div class="timeline">
-                                        <div class="timeline-content">
-                                            <h4 class="title">
-                                                <span><i aria-hidden="true" class="fa fa-circle"></i></span>
-                                                Gæstgiveren
-                                            </h4>
-                                            <h5>Allinge, Bornholm, Denmark</h5>
-                                            <p class="description">
-                                                Assisted with Mise en place and preparation of the buffet as well as
-                                                assisting in cleaning, dish washing and sales </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="single-timeline-box fix">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="experience-time text-right">
-                                        <h2>
-
-                                            2019 - 2019
-                                        </h2>
-                                        <h3>Barista, bartender, waiter and sales assistant</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-offset-1 col-md-5">
-                                    <div class="timeline">
-                                        <div class="timeline-content">
-                                            <h4 class="title">
-                                                <span><i aria-hidden="true" class="fa fa-circle"></i></span>
-                                                Torvehallen
-                                            </h4>
-                                            <h5>Rønne, Bornholm, Denmark</h5>
-                                            <p class="description">
-                                                Sale of goods, while brewing coffee, mixing cocktails and serving lunch
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="single-timeline-box fix">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="experience-time text-right">
-                                        <h2>2017 - 2018</h2>
-                                        <h3>Service employee</h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-offset-1 col-md-5">
-                                    <div class="timeline">
-                                        <div class="timeline-content">
-                                            <h4 class="title">
-                                                <span><i aria-hidden="true" class="fa fa-circle"></i></span>
-                                                Kvickly
-                                            </h4>
-                                            <h5>Rønne, Bornholm, Denmark</h5>
-                                            <p class="description">
-                                                At first, I worked as a service employee at checkout, thereafter I was
-                                                moved to the kiosk which I became responsible for closing
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
+  <section>
+    <div class="graphic">
+      <video autoplay loop muted playsinline>
+        <source src="Resources/raytracer.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     </div>
 
-</section><!--experience-->
-<section class="portfolio" id="portfolio">
-    <div class="portfolio-details">
-        <div class="section-heading text-center">
-            <h2>My Games and game projects</h2>
-            <p>A snippet of the games and projects I've developed or co-developed</p>
-        </div>
-        <div class="img-container">
-            <div class="image-container" data-text="1" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/games/raytracer.png"/>
-                <div class="overlay">
-                    <div class="text">GLSL ray tracer</div>
-                </div>
-            </div>
-            <div class="image-container" data-text="2" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/games/beerder.jpeg"/>
-                <div class="overlay">
-                    <div class="text">Open-GL shadering library</div>
-                </div>
-            </div>
-            <div class="image-container" data-text="3" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/games/oceanOutcasts.png"/>
-                <div class="overlay">
-                    <div class="text">Ocean Outcasts</div>
-                </div>
-            </div>
-            <div class="image-container" data-text="4" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/games/TLR.jpeg"/>
-                <div class="overlay">
-                    <div class="text">The Last Reservoir</div>
-                </div>
-            </div>
-            <div class="image-container" data-text="5" onclick="openModal(this)">
-                <img alt="portfolio image" src="assets/images/games/frog.png"/>
-                <div class="overlay">
-                    <div class="text">Ongoing research project into AI in turn-based strategy games</div>
-                </div>
-            </div>
-        </div>
+    <div class="content">
+      <div class="max-w-lg md:float-animation">
+        <span>03 / Simulation</span>
+        <h2>Ray Tracing Graphics Simulation</h2>
+        <p>
+          A deep dive into realistic image synthesis, this project implements a custom ray tracing engine designed to generate photorealistic scenes by accurately simulating light–object interactions.<br>
+
+          Developed in C++ and GLSL, the engine features a fully configurable pipeline where users can adjust key settings—rays per pixel, maximum bounces, focus distance, and various diffusion methods—to tailor the rendering process<br>
+        </p>
+        <a class="hover:[&_button]:[&_svg]:text-github" href="https://github.com/ThorLL/ray-tracer">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>
+            Source
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="content">
+      <div class="max-w-lg md:float-animation">
+        <span>04 / Game</span>
+        <h2>Ocean Outcasts</h2>
+        <p>
+          A survival, roguelike management game set in the crushing depths of the ocean. Players assemble a crew and descend into the abyss in search of a mysterious goal—but every dive brings new dangers and mounting pressure.<br>
+
+          As the mission unfolds, players must balance critical resources: oxygen, hull integrity, navigation systems, and the production of weapons to defend against increasingly nightmarish sea creatures. Every decision can mean life or death for the crew, and every dive is a step deeper into the unknown.<br>
+
+          Inspired by themes of isolation, dread, and fragile hope, Ocean Outcasts challenges players to adapt, strategize, and survive where light cannot reach.<br>
+        </p>
+        <a class="hover:[&_button]:[&_svg]:text-itch" href="https://thorllind.itch.io/ocean-outcasts">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z"/>
+            </svg>
+            Play It
+          </button>
+        </a>
+        <a class="hover:[&_button]:[&_svg]:text-github" href="https://github.com/ThorLL/ocean-outcasts">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>
+            Source
+          </button>
+        </a>
+      </div>
     </div>
 
-</section><!--MyGames-->
-<section class="portfolio" id="software">
-    <div class="section-heading text-center">
-        <h2>Software Projects</h2>
+    <div class="graphic">
+      <video autoplay loop muted playsinline>
+        <source src="Resources/oceanOutcasts.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     </div>
-    <div class="container">
-        <div class="about-content">
-            <div class="row">
-                <div class="col-sm-6 single-about-txt">
-                    <h3>
-                        Bachelor Thesis
-                    </h3>
-                    <p>
-                        This study explored automating badminton match annotation using machine learning and computer vision, with a dataset of 42 matches from Team Denmark. It employed decision list and classification models, training on 37 matches and testing on 5. The serve model reached a 97.77% F1 score, while classification models had a lower average F1 score. It found that serves could be detected with skeleton data from OpenPose, and duel ends with TrackNetV2 ball tracking, but duel classification was limited by overfitting. The research led to a program helping coaches annotate matches more efficiently, suggesting a need for further research on duel classification.
-                    </p>
-                </div>
-                <div class="col-sm-6" style="padding-top: 60px;">
-                    <img alt="AI classifiers image" class="img-responsive" src="assets/images/software/classifiers.png"
-                         style="max-width:100%;height:auto;"/>
-                    <br>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 100px;">
-            <div class="col-sm-4">
-                    <img alt="Othello board image" class="img-responsive" src="assets/images/software/othello.png"
-                         style="max-width:100%;height:auto;"/>
-                    <br>
-                </div>
-                <div class="col-sm-8 single-about-txt">
-                    <h3>
-                        Othello AI
-                    </h3>
-                    <p>
-                        In the fourth semester, I was part of developing artificial intelligence to play Othello. The AI was developed in Java using the alpha-beta minimax algorithm, which was expanded with a mapping function to increase the program's efficiency by 400%. Our artificial intelligence participated in an Othello competition at the university where it won first place.
-                        <br>
-                        The original java implementation with a GUI and human inputs can he found <a style="font-size: 15px" href="https://github.com/ThorLL/IAI_Othello">here</a>, I have since then rebuilt the project in C++ it doesn't have a graphical user interface nor human inputs, and is also publicly available <a style="font-size: 15px" href="https://github.com/ThorLL/Othello-AI">here</a>. In the future a GUI with human input will be added with the Beerder library.
-                    </p>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 100px;">
-                <div class="col-sm-8 single-about-txt">
-                    <h3>
-                        Github Marketplace Contributions
-                    </h3>
-                    <p>
-                        In my many hours working with git I've at times to found features lacking. To this I've published two actions to the Github marketplace
-                    </p>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-1" style="padding-top: 15px;">
-                    <a href="https://github.com/marketplace/actions/repository-cleaner">
-                        <div class="icon-item">
-                            <div class="icon-detail" title="Click copy alert-triangle" style="background: rgb(215, 58, 73);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-triangle" color="white">
-                                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-                                    <line x1="12" y1="9" x2="12" y2="13"></line>
-                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                                </svg>
-                            </div>
-                            <p>Repository Cleaner</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-1" style="padding-top: 15px;">
-                    <a href="https://github.com/marketplace/actions/deploy-to-environments">
-                        <div class="icon-item">
-                            <div class="icon-detail" title="Click copy upload-cloud" style="background: rgb(255, 211, 61);">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud" color="black">
-                                    <polyline points="16 16 12 12 8 16"></polyline>
-                                    <line x1="12" y1="12" x2="12" y2="21"></line>
-                                    <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
-                                    <polyline points="16 16 12 12 8 16"></polyline>
-                                </svg>
-                            </div>
-                            <p>Deploy to environments</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-1"></div>
-            </div>
-        </div>
-    </div>
-</section><!--Projects-->
+  </section>
 
-<footer class="footer-copyright" id="footer-copyright">
-    <div id="scroll-Top">
-        <div class="return-to-top">
-            <i class="fa fa-angle-up"></i>
-        </div>
+  <section>
+    <div class="graphic">
+      <img src="Resources/othello.png" alt="Otello Board">
     </div>
 
-</footer>
-
-<div class="modal" id="myModal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <p id="modalText">Popup text goes here</p>
+    <div class="content">
+      <div class="max-w-lg md:float-animation">
+        <span>05 / AI</span>
+        <h2>Othello AI</h2>
+        <p>
+          An efficient, competitive Othello-playing artificial intelligence built using the alpha-beta minimax algorithm. To dramatically boost performance, the core logic was enhanced with a custom board-mapping function, resulting in a 400% increase in evaluation speed.
+          <br>
+          The AI achieved first place in a competitive Othello tournament, consistently outperforming other entries through speed and strategic depth.
+          <br>
+          The original Java version includes a graphical user interface and supports human interaction
+        </p>
+        <a class="hover:[&_button]:[&_svg]:text-github" href="https://github.com/ThorLL/IAI_Othello">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>
+            Java
+          </button>
+        </a>
+        <p>The project was later rebuilt from the ground up in C++ as a headless engine, optimized purely for AI-vs-AI simulation and testing</p>
+        <a class="hover:[&_button]:[&_svg]:text-github" href="https://github.com/ThorLL/Othello-AI">
+          <button class="round-button">
+            <svg class="size-4 max-md:size-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>
+            C++
+          </button>
+        </a>
+      </div>
     </div>
-</div>
+  </section>
 
-<script src="assets/js/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootsnav.js"></script>
-<script src="assets/js/jquery.sticky.js"></script>
-<script src="assets/js/progressbar.js"></script>
-<script src="assets/js/jquery.appear.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<script src="assets/js/custom.js"></script>
+  <section>
+    <div class="content">
+      <div class="max-w-lg md:float-animation">
+        <span>06 / AI</span>
+        <h2>Bachelor Thesis</h2>
+        <p>
+          This study explored automating badminton match annotation using machine learning and computer vision, with a dataset of 42 matches from Team Denmark.
+          <br>
+          It employed decision list and classification models, training on 37 matches and testing on 5. The serve model reached a 97.77% F1 score, while classification models had a lower average F1 score.
+          <br>
+          It found that serves could be detected with skeleton data from <a class="underline" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a>, and duel ends with
+          <a class="underline" href="https://github.com/ChgygLin/TrackNetV2-pytorch">TrackNetV2</a> shuttlecock tracking, but duel classification was limited by overfitting.
+          <br>
+          The research led to a program helping coaches annotate matches more efficiently, suggesting a need for further research on duel classification.
+        </p>
+        <p class="italic opacity-50" >Note: I can't share images nor source code as per my NDA with Team Denmark</p>
+      </div>
+    </div>
+
+    <div class="graphic">
+      <img src="https://images-bonnier.imgix.net/files/his/production/2011/04/04143822/badminton-1428046.jpg?auto=compress,format&w=2618&fit=crop&crop=focalpoint&fp-x=0.5&fp-y=0.5" alt="Otello Board">
+    </div>
+  </section>
+
+  <div class="fixed right-8 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-2">
+    <button data-toggled="true" onclick="scrollToSection(0)" class="scroll-dot" title="Tornado Vortex Simulation"></button>
+    <button onclick="scrollToSection(1)" class="scroll-dot" title="The Last Reservoir"></button>
+    <button onclick="scrollToSection(2)" class="scroll-dot" title="Ray Tracing Graphics Simulation"></button>
+    <button onclick="scrollToSection(3)" class="scroll-dot" title="Ocean Outcasts"></button>
+    <button onclick="scrollToSection(4)" class="scroll-dot" title="Othello AI"></button>
+    <button onclick="scrollToSection(5)" class="scroll-dot" title="Bachelor Thesis"></button>
+  </div>
+</main>
+
 </body>
-
+<script src="script.js"></script>
 </html>
-
-<script>
-    const gameText = {
-        "1": "A simple ray tracer build from the ground up in C++ and GLSL, soon to be based on the Beerder shadering library<br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/ray-tracer\">github.com</a>",
-        "2": "(Very early stages) Ongoing Open-GL shadering library project with my co-student and friend Thomas. Built in C++ to speed up grapgics programming projects <br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/beerder\">github.com</a><br><i>AI generated image (I am not an artist)</i>",
-        "3": "Ocean Outcasts is the most extensive game I've worked on to date. The survival-, rouge-like-, management game was developed following my studies in the Making Games course in a team of a product manager, 2 designers and 3 programmers. The game plays out with first selecting one's crew for which to descend into the deep ocean, in an attempt to reach an unknown goal. Along the way the player must manage their crew members as well as the submarine's oxygen levels, navigation, hull strength and weapons' production, while fighting of increasingly dreadful deep sea monsters.<br>Available at:<br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://thorllind.itch.io/ocean-outcasts\">itch.io</a><br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/ocean-outcasts\">github.com</a>",
-        "4": "<b>Hero-Section video</b><br>The Last Reservoir is an environmentally story driven adventure game. Work with the resistance group to take down the elitist nobility exploiting the starving and suffocating populaces. Your job is to infiltrate, investigate and expose the truths about the missing people and constant stream of job applications for test subjects.<br>Available at:<br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://thorllind.itch.io/the-last-reservoir\">itch.io</a><br><a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://github.com/ThorLL/the-last-reservoir\">github.com</a><br><i>AI generated image (The game doesn't have a splash art and none of us are artists)</i>",
-        "5": "Ongoing research project into AI in turn-based strategy games at ITU<br>Art created by one of research team's designers <a style=\"color: #EAB464; text-decoration: underline; font-size: 14px;\" href=\"https://www.lauradecarli.com\">Laura DeCarli</a>",
-    };
-
-    function openModal(element) {
-        const key = element.getAttribute('data-text');
-        document.getElementById("modalText").innerHTML = gameText[key];
-        document.getElementById("myModal").style.display = "block";
-    }
-
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-    }
-
-    // Optional: Close the modal if outside click
-    window.onclick = function (event) {
-        if (event.target === document.getElementById("myModal")) {
-            closeModal();
-        }
-    }
-
-</script>
