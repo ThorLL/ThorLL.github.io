@@ -63,9 +63,22 @@
     </div>
     <div class="md:relative items-center flex justify-center">
       <div class="z-4 absolute size-full bg-primary top-0 left-0 border-accent md:border-b-1 max-md:hidden"></div>
-      <div class="*:z-5 justify-center flex gap-2 items-center">
-        <div class="size-2 rounded-full bg-green-400 "></div>
-        <button class="cursor-pointer" type="button" onclick="document.getElementById('contact-form').dataset.toggled = document.getElementById('contact-form').dataset.toggled === 'true' ? 'false' : 'true'">Available for work</button>
+      <div class="*:z-5 justify-center flex gap-2 items-center" onclick="document.getElementById('contact-form').dataset.toggled = document.getElementById('contact-form').dataset.toggled === 'true' ? 'false' : 'true'">
+        <div class="size-2 rounded-full bg-green-400"></div>
+          <div class="relative cursor-pointer overflow-hidden">
+          <p class="group">
+            <span class="group-hover:-translate-y-full flex flex-col border-b border-dashed border-accent  transition-all duration-1000 ease-slow">
+              Available for work
+            </span>
+            <span class="group-hover:-translate-y-full absolute top-full flex items-center justify-center transition-all duration-1000 ease-slow">
+              Reach out
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1 size-4">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </span>
+          </p>
+        </div>
       </div>
       <div id="contact-form" class="top-32 md:top-full max-md:h-3/4 -translate-y-full">
           <form action="https://formsubmit.co/thorlind030601@gmail.com" method="POST" class="flex flex-col gap-5">
