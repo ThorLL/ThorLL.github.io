@@ -15,32 +15,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body class="bg-primary flex flex-col h-screen m-0">
-<nav class="flex w-full relative
-  md:divide-x-1 divide-accent
-  items-center
-  justify-between
-  data-[toggled=true]:[&>#nav-mobile-section]:max-md:translate-y-0" data-toggled="false">
-  <div class="flex border-accent md:border-b-1 lg:basis-1/2 basis-1/4 h-full z-5 items-center px-4 py-10 gap-6">
+<nav data-toggled="false">
+  <div class="flex border-accent md:border-b-1 lg:basis-1/2 basis-1/4 h-full z-5 items-center px-4 py-6 gap-6">
     <div class="size-16 rounded-full bg-[url(../Resources/me.jpg)] bg-center bg-cover"></div>
     <p class="!font-[Decovar_Draw] animate-draw lg:text-2xl tracking-[0.75rem]">THOR LIND</p>
   </div>
-  <div id="nav-mobile-section" class="divide-accent divide-x-1
-      place-content-evenly
-      max-md:fixed
-      flex flex-col md:flex-row lg:basis-1/2 basis-3/4
-      md:*:basis-1/3
-      h-full
-      max-md:w-screen
-      max-md:-translate-y-full
-      bg-primary
-      *:px-4
-      *:py-10
-      transition-transform
-      duration-600
-      ease-in-out
-      z-4
-      bottom-0
-  ">
+  <div id="nav-mobile-section">
     <div class="flex flex-col items-center max-md:gap-7 justify-center md:flex-row text-5xl md:text-base border-accent md:border-b-1">
       <a class="hover:[&_button]:[&_svg]:text-green-400 hover:underline" href="Resources/Public%20CV%2004.pdf" download>
         <button class="round-button !m-0">
@@ -63,7 +43,7 @@
     </div>
     <div class="md:relative items-center flex justify-center">
       <div class="z-4 absolute size-full bg-primary top-0 left-0 border-accent md:border-b-1 max-md:hidden"></div>
-      <div class="*:z-5 justify-center flex gap-2 items-center" onclick="document.getElementById('contact-form').dataset.toggled = document.getElementById('contact-form').dataset.toggled === 'true' ? 'false' : 'true'">
+      <div class="md:*:z-5 justify-center flex gap-2 items-center" onclick="document.getElementById('contact-form').dataset.toggled = document.getElementById('contact-form').dataset.toggled === 'true' ? 'false' : 'true'">
         <div class="size-2 rounded-full bg-green-400"></div>
           <div class="relative cursor-pointer overflow-hidden">
           <p class="group">
@@ -80,14 +60,14 @@
           </p>
         </div>
       </div>
-      <div id="contact-form" class="top-32 md:top-full max-md:h-3/4 -translate-y-full">
+      <div id="contact-form">
           <form action="https://formsubmit.co/thorlind030601@gmail.com" method="POST" class="flex flex-col gap-5">
             <div class="input-field">
               <input class="w-full px-3 py-4 rounded-lg border-1 border-accent" type="text" id="email" name="email" required="">
               <label for="email">Company Email</label>
             </div>
             <div class="input-field">
-              <textarea class="apply w-full px-3 py-4 rounded-lg border-1 border-accent resize-none" name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+              <textarea class="w-full px-3 py-4 rounded-lg border-1 border-accent" name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
               <label for="textarea">Write a message</label>
             </div>
             <div class="flex items-center justify-between">
